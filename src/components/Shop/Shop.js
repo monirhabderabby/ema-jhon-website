@@ -4,7 +4,10 @@ import { useState } from 'react';
 import Product from '../Product/Product';
 import './Shop.css'
 
+
+
 const Shop = () => {
+    const [cart, setCart] = useState([])
     const [products, setProducts] = useState([])
 
     useEffect(()=>{
@@ -14,7 +17,7 @@ const Shop = () => {
     },[])
 
     function addToCart(product){
-        console.log(product);
+        setCart(product);
     }
 
     return (
@@ -25,7 +28,20 @@ const Shop = () => {
                 }
             </div>
             <div className='cart-container'>
-                
+                <div className="title">
+                    <h5>Order Summery</h5>
+                </div>
+                <div className="body">
+                    <p>Selected Items: </p>
+                    <p>Total Price: $100 </p>
+                    <p>Total Shipping Charge: $5 </p>
+                    <p>Tax: $5 </p>
+                    <p>Grand Total: $5 </p>
+                </div>
+                <div className="button">
+                    <button className='clear-btn'>Clear Cart</button>
+                    <button className='review-btn'>Review Order</button>
+                </div>
             </div>
         </div>
     );
