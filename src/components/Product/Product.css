@@ -1,0 +1,16 @@
+/* =====Card===== */
+.card{
+    height: 508px;
+    width: 300px;
+}
+img{
+    width: 286px;
+    height: 286px;
+}
+.p-name{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    text-align: left;
+}
