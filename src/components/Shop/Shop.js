@@ -9,7 +9,10 @@ import { faTrash, faAngleRight } from '@fortawesome/free-solid-svg-icons';
 
 
 const Shop = () => {
+    // =====useState for Cart=====
     const [cart, setCart] = useState([])
+
+    // =====useState for Product=====
     const [products, setProducts] = useState([])
 
     useEffect(()=>{
@@ -19,7 +22,8 @@ const Shop = () => {
     },[])
 
     function addToCart(product){
-        setCart(product);
+        const newCart = [...cart, product]
+        setCart(newCart);
     }
 
     return (
@@ -33,13 +37,14 @@ const Shop = () => {
                 <div className="title">
                     <h5>Order Summery</h5>
                 </div>
-                <div className="body">
-                    <p>Selected Items: </p>
+                <div className="body ta">
+                    <p>Selected Items: {cart.length}</p>
                     <p>Total Price: $100 </p>
                     <p>Total Shipping Charge: $5 </p>
                     <p>Tax: $5 </p>
                     <p>Grand Total: $5 </p>
                 </div>
+            
                 <div className="button">
                     <button className='clear-btn'>Clear Cart
                     <FontAwesomeIcon icon={faTrash} className='icon'></FontAwesomeIcon>

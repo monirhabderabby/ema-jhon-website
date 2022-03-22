@@ -28,6 +28,11 @@
     font-weight: 400;
     font-size: 25px;
 }
+.ta{
+    text-align: left;
+    padding-left: 20px;
+    margin-top: 4rem;
+}
 .clear-btn{
     color: #fff;
     background-color: #FF3030;
