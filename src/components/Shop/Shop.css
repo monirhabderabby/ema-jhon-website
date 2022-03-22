@@ -35,6 +35,13 @@
     padding: 12px;
     width: 80%;
     margin: 10px 0px;
+    border-radius: 4px;
+}
+.clear-btn:hover{
+    background-color: rgb(231, 23, 23)
+}
+.icon{
+    margin: 0px 8px;
 }
 .review-btn{
     color: #fff;
@@ -42,6 +49,10 @@
     padding: 12px;
     background-color: #FF9900;
     width: 80%;
+    border-radius: 4px;
+}
+.review-btn:hover{
+    background-color: #e29016;
 }
 
 
