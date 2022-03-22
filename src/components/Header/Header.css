@@ -1,9 +1,10 @@
-*{
-    margin: 0;
-    padding: 0;
-}
+
 .header{
     background-color: #1C2B35;
+}
+.logo{
+    width: 140px;
+    height: 40px;
 }
 .navBar{
     height: 80px;
